@@ -12,10 +12,22 @@ func main() {
 	fmt.Scanln(&username)
 	fmt.Print("Password: ")
 	fmt.Scanln(&password)
-	// Call function LogIn
 
+	// Call function LogIn
 	LogIn(username, password)
+
+	// Call HelloFunction
+	fmt.Println("HelloFunction:", HelloFunction())
+
+	// Call Add function
+	resultAdd := Add(5, 3)
+	fmt.Println("Addition Result:", resultAdd)
+
+	// Call Minus function
+	resultMinus := Minus(8, 3)
+	fmt.Println("Subtraction Result:", resultMinus)
 }
+
 
 func HelloFunction() string {
 	return "Hello"
