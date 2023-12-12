@@ -17,3 +17,17 @@ func TestAdd(t *testing.T) {
         t.Errorf("Add(2, 3) = %v, want %v", got, expected)
     }
 }
+
+func TestMinus(t *testing.T) {
+    expected := 1
+    if got := Minus(3, 2); got != expected {
+        t.Errorf("Minus(3, 2) = %v, want %v", got, expected)
+    }
+}
+
+func TestUserLogin(t *testing.T) {
+    expected := true
+    if got := UserLogin("admin", "password"); got != expected {
+        t.Errorf("UserLogin(\"admin\", \"admin\") = %v, want %v", got, expected)
+    }
+}
